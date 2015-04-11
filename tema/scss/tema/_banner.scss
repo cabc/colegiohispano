@@ -1,0 +1,139 @@
+.bannerContainer{
+	position: relative;
+	width: 100%;
+	height: 260px;
+	overflow: hidden;
+	@include desde(tablet){
+		height: 400px;
+		
+	}
+	@include desde(web){
+		height: 630px;
+		
+	}
+
+	img{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 100%;
+		}
+}
+.bannerPrincipal{
+	margin-top: 1em;
+}
+.copy{
+
+	@include desde(tablet){
+		&__mensajes{
+			background: rgba(0,0,0,0.5);
+			color: #FFF;
+			font-size: 2em;
+			font-weight: 100;
+			text-align: center;
+			padding: 0.5em 0 0.5em;
+			margin-top: 15px;
+			position: absolute;
+			top: -380px;
+		}
+		&__mensajesColegio{
+		background:$color4;
+		color: #FFF;
+		font-size: 2em;
+		font-weight: 100;
+		text-align: center;
+		line-height: 1;
+		padding: 0.5em 0 0  0.5em;
+		width: 100%;
+		position: absolute;
+		top: -80px;
+		left: -10px;
+		}
+		@include desde(web){
+			&__mensajes{
+			background: rgba(0,0,0,0.5);
+			color: #FFF;
+			font-size: 2em;
+			font-weight: 100;
+			text-align: center;
+			padding: 0.5em 0 0.5em;
+			margin-top: 15px;
+			position: absolute;
+			top: -580px;
+			width: 100%;
+			}
+			&__mensajesColegio{
+			background:$color4;
+			color: #FFF;
+			font-size: 2em;
+			font-weight: 100;
+			text-align: center;
+			line-height: 1;
+			padding: 0.5em 0 0  0.5em;
+			width: 100%;
+			position: absolute;
+			top: -80px;
+			}
+				
+			}	
+		
+	}
+	&__mensajes{
+			background: rgba(0,0,0,0.5);
+			color: #FFF;
+			font-size: 2em;
+			text-align: center;
+			padding: 0.5em 0 0.5em;
+			margin-top: 15px;
+		}
+	&__mensajesColegio{
+		background:$color4;
+		color: #FFF;
+		font-size: 2em;
+		text-align: center;
+		line-height: 1;
+		padding: 0.5em 0 0.5em;
+		margin-top: -10px;
+	}	
+}
+.inscripciones{
+	background:$color2;
+	text-align:center;
+
+	.historia {
+		color:#FFF;
+		font-size:1.5em;
+		font-weight:100;
+		font-family: 'hind';
+		line-height:1.3;
+		@include desde(web){
+			font-size: 1.3em;
+				
+			}	
+	}
+	.boton{	
+		height: 80px;
+
+		.inscripcion{
+			background:$color3;
+			border-radius:5px;
+			color:#FFF;
+			padding:0.5em 0.5em;
+			text-align:center;
+			text-shadow: 1.5px 1.5px 2px #262626;
+			font-size:2em;
+
+			@include desde(web){
+				position: relative;
+				top: 70px;						
+			}
+
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+}

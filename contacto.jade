@@ -1,0 +1,56 @@
+doctype html
+html(lang="es")
+	head
+		title Colegio Hispano Americano 
+		meta(charset="utf-8")
+		meta(name="viewport",content="width=device-width,initial-scale=1,maximun-scale=1")
+		link(rel="stylesheet", type="text/css", href="tema/css/estilos.css")
+		link(type="image/png", rel="icon", href="image/logo_favicon.png")
+		script(src="//code.jquery.com/jquery-1.11.2.min.js")
+		script(src="tema/js/scripts.js")
+	body
+		header#inicio
+			.grupo
+				.caja.web-40
+					.logo_hispano
+						a(href=("index.html")): img(src="image/logo.svg")		
+				.caja.web-60
+					#mostrar-menu Menu
+					ul.menu
+						li.menu__item: a.menu__link(href="index.html") HOME
+						li.menu__item: a.menu__link(href="nosotros.html") NOSOTROS
+						li.menu__item: a.menu__link(href="servicios.html") SERVICIOS
+						li.menu__item: a.menu__link(href="instalaciones.html") INSTALACIONES
+						li.menu__item: a.menu__link.activo(href="contacto.html") CONTACTO
+				//- inicio de formato de contacto 
+			.contacto
+				h1.contacto__item Cont&aacute;ctanos
+			.grupo.informacion
+					.caja.total
+						.informacion__mapa
+				
+					.caja
+						h2.informacion__item Colegio Hispano Americano Calle Madroño 15 SM 313 Email: contacto@hispanoamericano.com Tel: +52 (998) 880 86 25 
+				
+					.caja
+						.informacion__formulario
+
+		footer.footer 
+				.grupo
+					a(href=("#inicio")): img.up_item(src="image/flecha.png")
+					.caja.tablet-40
+						.social
+							a.social__item.icon-facebook(href="#")
+							a.social__item.icon-twitter(href="#")
+							a.social__item.icon-youtube(href="#")
+						.separacion
+								
+					.caja.tablet-60
+						.testimonio									
+							h6.testimonio__item Testimonios
+							img.testimonio__img(src="image/page1_pic10.jpg")
+							p.testimonio__comentario |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aliquid mollitia enim, eaque ipsam quam praesentium nesciunt, asperiores sit temporibus voluptatibus ipsa iure, commodi qui deserunt dolores officiis dolor sunt!
+					.caja.total
+						p.reservado| Todos los Derechos Resevados &copy; Colegio Hispano Americano la Luna 
+						span.reservado| Power By 
+							a.distinta(href="#") Distinta	

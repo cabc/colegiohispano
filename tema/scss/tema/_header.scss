@@ -1,0 +1,12 @@
+.logo_hispano{
+	padding: 1em 0 1em;
+	text-align: center;
+	img{
+		width:80%;
+		&:hover{
+			transition: ease 1s;
+			transform: scale(1.2) rotate(0deg) translateX(0px) skewX(0deg);
+		}
+	}
+}
+

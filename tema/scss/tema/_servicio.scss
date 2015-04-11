@@ -1,0 +1,31 @@
+#servicios{
+	margin-top:1em;
+	
+	.contenedor{
+		height: auto;
+		img{
+			width: 100%;
+		}
+		&_box{
+			background: $color2;
+			text-align: center;
+			width: 100%;
+			padding: 1em 0 1em 0;
+			
+
+		}	
+		&_title{
+			
+			color: #FFF;
+			font-size: 2em;
+
+			@include desde(tablet){
+				font-size: 1.6em;
+				
+			}
+
+			}
+		
+		
+	}
+}

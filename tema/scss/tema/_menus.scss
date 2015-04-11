@@ -1,0 +1,76 @@
+#mostrar-menu{
+	background:$color1;
+	font-size:1.2em;
+	padding-left:1em;
+	line-height:2.5;
+	color:#fff;
+	@include desde(tablet){
+		font-size: 1.5em;
+	}
+	@include desde(web){
+		display: none;
+		
+	}
+	@include mostrar_menu (#fff,1em)
+
+}
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+		
+	@include desde(web){
+		display: block;
+		text-align: center;
+		margin-top: 4em;
+			.activo{
+				background:$color1;
+				color:#fff;
+				padding: 1em 1em;
+			}
+			&__item{
+			
+				background:#FFF;
+				color:$color1;
+				display: inline-block;	
+
+				
+				}
+			&__link{
+				color:$color1;
+				line-height: 2.5;
+				padding: 1em 1em;
+			
+
+					&:hover{
+						background:$color1;
+						color:#fff;
+						padding: 1em 1em;
+						transition: ease 0.9s;
+							}
+				   }		
+
+			}
+			
+
+	&__item{
+			@include hasta(web){
+			background: lighten($color1, 10%);
+		}	
+	}
+	&__link{
+		
+		line-height: 2.5;
+		@include hasta(web){
+			color:#fff;
+			margin-left: 1.7em;
+			
+		}
+		
+
+		&:hover{
+			color: #fff;
+		}
+	}
+}		

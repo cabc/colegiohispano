@@ -1,0 +1,93 @@
+doctype html
+html(lang="es")
+	head
+		title Colegio Hispano Americano 
+		meta(charset="utf-8")
+		meta(name="viewport",content="width=device-width,initial-scale=1,maximun-scale=1")
+		link(rel="stylesheet", type="text/css", href="tema/css/estilos.css")
+		link(type="image/png", rel="icon", href="image/logo_favicon.png")
+		script(src="//code.jquery.com/jquery-1.11.2.min.js")
+		script(src="tema/js/scripts.js")
+	body
+		header#inicio
+			.grupo
+				.caja.web-40
+					.logo_hispano
+						a(href=("index.html")): img(src="image/logo.svg")		
+				.caja.web-60
+					#mostrar-menu Menu
+					ul.menu
+						li.menu__item: a.menu__link(href="index.html") HOME
+						li.menu__item: a.menu__link.activo(href="nosotros.html") NOSOTROS
+						li.menu__item: a.menu__link(href="servicios.html") SERVICIOS
+						li.menu__item: a.menu__link(href="instalaciones.html") INSTALACIONES
+						li.menu__item: a.menu__link(href="contacto.html") CONTACTO
+			.bannerContainer
+				img(src="image/banner.jpg")			
+			.grupo
+				.caja
+					.bannerPrincipal
+						
+						.copy
+							h1.copy__mensajes EL FUTURO DEL MUNDO PENDEL ALIENTO DE LOS NIÑOS QUE VAN A LA ESCUELA 
+							h2.copy__mensajesColegio SISTEMA DE APRENDIZAJE DE LA MÁS ALTA CALIDAD
+
+			.grupo
+				.caja.inscripciones
+					.caja
+							h3.historia Somos un colegio de enfoque constructivista basada en valores, que busca la formación de personas responsables proactivas, que contribuyan con una mejor sociedad cancunense, creemos firmemente que el unico medio para lograr ésta meta es la educación; por lo que estamos comprometidos con ella desde 1995
+					.caja
+						.boton
+							a.inscripcion(href="#") INSCRIPCIONES
+	
+
+		section#servicios
+			.grupo
+				.caja.tablet-1-3 
+					.contenedor
+						img(src="image/3(1).jpg")
+						.contenedor_box
+							a.contenedor_title(href="#") MATERNAL
+			
+				.caja.tablet-1-3 
+					.contenedor
+						img(src="image/3(1).jpg")
+						.contenedor_box
+							a.contenedor_title(href="#") PRESSCOLAR
+			
+				.caja.tablet-1-3 
+					.contenedor
+						img(src="image/3(1).jpg")
+						.contenedor_box
+							a.contenedor_title(href="#") PRIMARIA
+
+		section
+			.grupo.eventos
+				.caja.tablet-50
+					p.eventos__mensaje
+							|   Estamos continuamente en busca de la excelencia academia, cada miembro de nuestra comunidad es participe de esta búsqueda, así es como Maestros, Alumnos y Padres de familia unidos logramos un mejor Cancún.
+					p.eventos__mensaje 
+							|   Nuestro proyecto esta basado en principios que integran mente y cuerpo, teoría y práctica, arte y ciencia, voz y pensamiento, proyecto y realidad. 
+				.caja.tablet-50
+									
+					img.eventos__item(src="image/eventos.jpg")
+			
+
+		footer.footer 
+				.grupo
+					a(href=("#inicio")): img.up_item(src="image/flecha.png")
+					.caja
+						.social
+							a.social__item.icon-facebook(href="#")
+							a.social__item.icon-twitter(href="#")
+							a.social__item.icon-youtube(href="#")
+						.separacion
+								
+					.caja
+						.testimonio									
+							h6.testimonio__item Testimonios
+							img.testimonio__img(src="image/page1_pic10.jpg")
+							p.testimonio__comentario |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aliquid mollitia enim, eaque ipsam quam praesentium nesciunt, asperiores sit temporibus voluptatibus ipsa iure, commodi qui deserunt dolores officiis dolor sunt!
+						p.reservado| Todos los Derechos Resevados &copy; Colegio Hispano Americano la Luna 
+						p.reservado| Power By 
+							a.distinta(href="#") Distinta	

@@ -1,0 +1,21 @@
+.eventos{
+	background: $color3;
+	color:#FFF;
+	font-family:'hind';
+	font-weight:100;
+	font-size:1.3em;
+	margin: 1em auto;
+	padding: 1em 0 1em 0 ;
+	
+	&__mensaje {
+		line-height: 1;
+	}
+	&__item {
+		display: block;
+		border-radius: 100%;
+		border:solid #fff 10px; 
+		box-shadow: 1px 1px 5px 1px #4A4A4A;
+	
+	}
+}
+	

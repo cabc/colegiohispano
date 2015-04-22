@@ -11,10 +11,10 @@ html(lang="es")
 	body
 		header#inicio
 			.grupo
-				.caja.web-40
+				.caja.web-35
 					.logo_hispano
 						a(href=("index.html")): img(src="image/logo.svg")		
-				.caja.web-60
+				.caja.web-65
 					#mostrar-menu Menu
 					ul.menu
 						li.menu__item: a.menu__link.activo(href="index.html") HOME
@@ -23,7 +23,9 @@ html(lang="es")
 						li.menu__item: a.menu__link(href="instalaciones.html") INSTALACIONES
 						li.menu__item: a.menu__link(href="contacto.html") CONTACTO
 			.bannerContainer
-				img(src="image/banner.jpg")			
+				video(loop="loop",width="100%",autoplay="autoplay")
+					source(src="image/spot.mp4", type="video/mp4")
+
 			.grupo
 				.caja
 					.bannerPrincipal
@@ -34,7 +36,16 @@ html(lang="es")
 			.grupo
 				.caja.inscripciones
 					.caja.web-60
-							h3.historia Somos un colegio de enfoque constructivista basada en valores, que busca la formación de personas responsables proactivas, que contribuyan con una mejor sociedad cancunense, creemos firmemente que el unico medio para lograr ésta meta es la educación; por lo que estamos comprometidos con ella desde 1995
+							h3.historia En el Colegio Hispano Americano, toda acción emprendida está
+										insertada en el marco de nuestros Principios Institucionales:
+										br
+										Mentalidad constructivista, actitud de aprendizaje permanente,
+										innovación, compromiso, respeto, responsabilidad, toma de
+										decisiones en conjunto, compromiso con la verdad y confianza.
+										br
+										Lo anterior constituye un marco referencial que orienta las actitudes
+										de todos los miembros de la comunidad de aprendizaje y garantiza un
+										ambiente educativo idóneo para el desarrollo de nuestros estudiantes.
 					.caja.web-40
 						.boton
 							a.inscripcion(href="#") INSCRIPCIONES
